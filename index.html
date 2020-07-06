@@ -19,7 +19,16 @@
     <link rel="stylesheet" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/tooplate-style.css" />
-    <!-- Templatemo style -->    
+    <!-- Templatemo style -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#toggle").click(function () {
+                $("p, h1, h2, h5, .tm-textbox, .tm-bg-dark, #tmNav, #tm_about_link").toggle(1000);
+                $("p, h1, h2, h5, .tm-textbox, .tm-bg-dark, #tmNav, #tm_about_link").toggleClass("blue");
+            });
+        });
+    </script>
 </head>
 
   <body>
@@ -86,7 +95,7 @@
                               This is a free template from <a href="https://www.tooplate.com/">Tooplate.com</a> that has been modifyed and tailored to suit the apperence and needs of the company. "simply creative 3D CAD Designs!" Click and scroll around to begin exploring.
                           </p>
                       </div>
-                      <a href="#" id="tm_about_link" data-linkid="1" class="tm-link">Read More</a>
+                      <a href="#" id="tm_about_link" data-linkid="1" class="tm-link" title="About">Read More</a>
                   </section>
 
                   <!-- Section 1 About Me -->
@@ -102,7 +111,7 @@
                           <a href="#"
                              id="tm_work_link"
                              data-linkid="2"
-                             class="tm-link m-0">Next</a>
+                             class="tm-link m-0" title="Work">Next</a>
                       </div>                 
                   </section>                 
                   <!-- Section 2 Work (Gallery) -->                 
@@ -197,11 +206,13 @@
       <div class="tm-bottom-container">
         <!-- Logo -->
         <div class="tm-Logo-box">
-          <img src="img/Alexinc.png" alt="logo" />
+          <img src="img/Alexinc.png" alt="logo" />           
         </div>
-
+      </div>
         <!-- Footer -->
         <footer>
+            
+            <button id="toggle" title="Hide/Show">Toggle</button>
             || 2020 Alex Inc. ||
 
             Design: <a rel="nofollow" href="https://fb.com/tooplate">Tooplate</a> ||

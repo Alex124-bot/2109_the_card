@@ -651,3 +651,9 @@ figure.effect-goliath:hover p {
 .tm-static {
   position: static;
 }
+
+/* My Own Style */
+.blue {
+  color: blue;
+}
+  
